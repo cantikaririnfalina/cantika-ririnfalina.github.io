@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections
 ------------------------------------------------------------------------------------------------*/
 section {
-    padding: 60px;
+    padding: 60px 0;
     overflow: hidden;
 }
 
@@ -115,7 +115,7 @@ section {
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 
-.header.logo {
+.header .logo {
     line-height: 0;
 }
 
@@ -124,10 +124,10 @@ section {
     margin-right: 6px;
 }
 
-.header.logo span {
+.header .logo span {
     font-size: 30px;
     font-weight: 700;
-    letter-spacing: 1-px;
+    letter-spacing: 1px;
     color: #012970;
     font-family: "Nunito", sans-serif;
     margin-top: 3px;
@@ -163,7 +163,7 @@ section {
     font-family: "Nunito", sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #013286;
+    color: #013289;
     white-space: nowrap;
     transition: 0.3s;
 }   
@@ -208,7 +208,7 @@ section {
     opacity: 0;
     visibility: hidden;
     background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 167, 0,25);
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0,25);
     transition: 0.3s;
     border-radius: 4px;
 }
@@ -218,8 +218,8 @@ section {
 }
 
 .navbar .dropdown ul a {
-    padding: 10px 20 px;
-    font-size: 25px;
+    padding: 10px 20px;
+    font-size: 15px;
     text-transform: none;
     font-weight: 600;
 }
@@ -263,9 +263,9 @@ section {
     }
 }
 
-/*--------------------------------------------------------------------------------------------------------
-# Mobile Navigation
------------------------------------------------------------------------------------------------------------*/
+/**
+* Mobile Navigation
+*/
 .mobile-nav-toggle {
     color: #012970;
     font-size: 28px;
@@ -487,7 +487,7 @@ hero .btn-get-started:hover i {
 }
 
 .about p {
-    margin: 15px p 30px 0;
+    margin: 15px 0 30px 0;
     line-height: 24px;
 }
 
@@ -544,7 +544,7 @@ hero .btn-get-started:hover i {
     font-size: 36px;
     display: block;
     font-weight: 600;
-    color: 0b198f;
+    color: #0b198f;
 }
 
 .counts .count-box p {
@@ -608,7 +608,7 @@ hero .btn-get-started:hover i {
 
  .features .feture-tabs .nav-link {
     background: none;
-    text-transform: none;
+    text-transform: uppercase;
     font-size: 15px;
     font-weight: 600;
     color: #012970;
@@ -724,9 +724,9 @@ hero .btn-get-started:hover i {
     cursor: pointer;
     display: inline-block;
     padding: 8px 20px 10px 20px;
-    font-size: 15p;
+    font-size: 15px;
     font-weight: 600;
-    line-height: 1px;
+    line-height: 1;
     color: #444444;
     margin: 0 4px 8px 4px;
     transition: 0.3s;
@@ -806,7 +806,7 @@ hero .btn-get-started:hover i {
     height: 48px;
     position: absolute;
     bottom: 35px;
-    right:  35px;
+    right: 35px;
     border-bottom: 3px solid rgba(1, 41, 112, 0.2);
     border-right: 3px solid rgba(1, 41, 112, 0.2);
     transition: all 0.5s ease 0s;
@@ -884,7 +884,7 @@ hero .btn-get-started:hover i {
 # Portfolio Details
 -------------------------------------------------------------------------------------------------------*/
 .portfolio-details {
-    width: 100%;
+    padding-top: 40px;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -992,7 +992,7 @@ hero .btn-get-started:hover i {
 .team .member .social a {
     transition: color 0.3s;
     color: rgba(1, 41, 112, 0.5);
-    margin: 15ox 12px;
+    margin: 15px 12px;
     display: block;
     line-height: 0;
     text-align: center;
@@ -1113,6 +1113,7 @@ hero .btn-get-started:hover i {
 }
 
 .footer .credits {
+    padding-top: 10px;
     text-align: center;
     font-size: 13px;
     color: #012970;
