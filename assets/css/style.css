@@ -1,3 +1,6 @@
+/*-------------------------------------------------------------------------------------------------------
+# General
+-------------------------------------------------------------------------------------------------------*/
 :root {
     scroll-behavior: smooth;
 }
@@ -17,13 +20,13 @@ a:hover {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Nunito", sans-serif;
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Nunito",sans-serif;
 }
-/*--------------------
-#section
-------------------*/
-section {
+/*-------------------------------------------------------------------------------------------------------
+# Sections
+-------------------------------------------------------------------------------------------------------*/
+section{
     padding: 60px 0;
     overflow: hidden;
 }
@@ -51,15 +54,15 @@ section {
     color: #012970;
 }
 
-  @media (max-width: 768px) {
-    .section-header p {
+@media (max-widht: 768px) {
+    .section-headerp {
         font-size: 28px;
         line-height: 32px;
     }
-  }  
-  /*----------------------------
-  # back to top button
-  --------------------------*/
+}
+/*-------------------------------------------------------------------------------------------------------
+# Back to top button
+-------------------------------------------------------------------------------------------------------*/
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -89,17 +92,17 @@ section {
     visibility: visible;
     opacity: 1;
 }
-/*----------------------------------
-# disable aos animation delay on mobile devices
-----------------------------------------------------*/
-@media screen and (max-width: 768px) {
+/*-------------------------------------------------------------------------------------------------------
+# Back to top button
+-------------------------------------------------------------------------------------------------------*/
+@media screen and (max-widht: 768px) {
     [data-aos-delay] {
         transition-delay: 0 !important;
     }
 }
-/*----------------------------------------------
-#header
--------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------
+# Header
+-------------------------------------------------------------------------------------------------------*/
 .header {
     transition: all 0.5s;
     z-index: 997;
@@ -109,7 +112,7 @@ section {
 .header.header-scrolled {
     background: #fff;
     padding: 15px 0;
-    box-shadow: 0 2px 20px rgba(1, 41, 112, 0.1);
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 
 .header .logo {
@@ -126,14 +129,14 @@ section {
     font-weight: 700;
     letter-spacing: 1px;
     color: #012970;
-    font-family: "Nunito", sans-serif;
+    font-family: "Nunito",sans-serif;
     margin-top: 3px;
 }
-/*--------------------------------------------------
-#navigation menu
-------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------
+# Navigation Menu
+-------------------------------------------------------------------------------------------------------*/
 /**
-* desktop navigation
+* Desktop Navigation
 */
 .navbar {
     padding: 0;
@@ -161,8 +164,8 @@ section {
     font-size: 16px;
     font-weight: 700;
     color: #013289;
-    white-space: nowrap;  
-    transition: 0.3s; 
+    white-space: nowrap;
+    transition: 0.3s;
 }
 
 .navbar a i,
@@ -198,7 +201,7 @@ section {
     display: block;
     position: absolute;
     left: 14px;
-    top: calc(100% + 30px);
+    top:calc(100% + 30px);
     margin: 0;
     padding: 10px 0;
     z-index: 99;
@@ -225,7 +228,7 @@ section {
     font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover,
+.navbar .dropdown ul 
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
     color: #4154f1;
@@ -248,20 +251,20 @@ section {
     top: 0;
     left: 100%;
     visibility: visible;
-} 
+}
 
 @media (max-width: 1366px) {
     .navbar .dropdown .dropdown ul {
-        left: -90%;
+        left: -90;
     }
 
     .navbar .dropdown .dropdown:hover>ul {
-        left: -100%;
+        left: -100;
     }
 }
 
 /**
-*mobile navigation
+* Mobile Navigation
 */
 .mobile-nav-toggle {
     color: #012970;
@@ -276,7 +279,7 @@ section {
     color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-widht: 991px) {
     .mobile-nav-toggle {
         display: block;
     }
@@ -352,7 +355,7 @@ section {
 }
 
 .navbar-mobile .dropdown ul a {
-    padding:  10px 20px;
+    padding: 10px 20px;
 }
 
 .navbar-mobile .dropdown ul a i {
@@ -365,12 +368,12 @@ section {
     color: #4154f1;
 }
 
-.navbar-mobile .dropdown>,.dropdown-active {
+.navbar-mobile .dropdown>.dropdown-active {
     display: block;
 }
-/* ---------------------------------------------
-#   HERO SECTION 
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# Hero Section
+-------------------------------------------------------------------------------------------------------*/
 .hero {
     width: 100%;
     height: 100vh;
@@ -386,7 +389,7 @@ section {
 }
 
 .hero h2 {
-    color: #444444;
+    color:#444444 ;
     margin: 15px 0 0 0;
     font-size: 26px;
 }
@@ -403,68 +406,68 @@ section {
 }
 
 .hero .btn-get-started span {
-    font-family: "Nunito", sans-serif;
+    font-family:"Nunito",sans-serif ;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
 }
 
 .hero .btn-get-started i {
-    margin-left: 5px;
-    font-size: 18px;
+    margin-left: 5px; 
+    font-size: 18px; 
     transition: 0.3s;
 }
 
-.hero .btn-get-started:hover i {
+.hero .btn-get-started:hover i { 
     transform: translateX(5px);
 }
 
-.hero .hero-img {
+.hero .hero-img { 
     text-align: right;
 }
 
 @media (min-width: 1024px) {
     .hero {
-        background-attachment: fixed;
+        background-attachment: fixed; 
     }
 }
-
-@media(max-width: 991px) {
-    .hero {
-        height: auto;
+    
+@media (max-width: 991px) { 
+    .hero { 
+        height: auto; 
         padding: 120px 0 60px 0;
-    }
+}
 
-    .hero .hero-img {
-        text-align: center;
+    .hero .hero-img { 
+        text-align: center; 
         margin-top: 80px;
-    }
+}
 
     .hero .hero-img img {
         width: 80%;
     }
 }
 
-@media (max-width: 768px) {
-    .hero {
-        text-align: center;
-    }
+@media (max-width: 991px) { 
+    .hero { 
+        height: center; 
+}
 
-    .hero h1 {
+    .hero h1{ 
         font-size: 32px;
-    }
+}
 
-    .hero h2 {
+    .hero h1{ 
         font-size: 24px;
-    }
+}
 
     .hero .hero-img img {
         width: 100%;
     }
 }
-/* ---------------------------------------------
-# ABOUT  
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# About
+-------------------------------------------------------------------------------------------------------*/
 .about .content {
     background-color: #f6f9ff;
     padding: 40px;
@@ -484,12 +487,12 @@ section {
 }
 
 .about p {
-    margin:  15px 0 30px 0;
+    margin: 15px 0 30px 0;
     line-height: 24px;
 }
 
 .about .btn-read-more {
-    line-height: 0;
+    line-height: 0; 
     padding: 15px 40px;
     border-radius: 4px;
     transition: 0.5s;
@@ -505,20 +508,20 @@ section {
     letter-spacing: 1px;
 }
 
-.about .btn-read-more i {
-    margin-left: 5px;
+.about .btn-read-more i{
+    margin-left: 5px; 
     font-size: 18px;
     transition: 0.3s;
 }
 
-.about .btn-read-more:hover i {
-    transform: translateX(5px);
+    .about .btn-read-more:hover { 
+        transform: translateX(5px);
 }
-/* ---------------------------------------------
-#   COUNTS
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# Counts
+-------------------------------------------------------------------------------------------------------*/
 .counts {
-    padding: 70px 0 60px;
+    padding: 70px 0 60px; 
 }
 
 .counts .count-box {
@@ -533,69 +536,69 @@ section {
 .counts .count-box i {
     font-size: 42px;
     line-height: 0;
-    margin-left: 20px;
+    margin-right: 20px; 
     color: #4154f1;
 }
 
-.counts .count-box span {
+.counts .count-box span { 
     font-size: 36px;
     display: block;
     font-weight: 600;
-    color: #0b198f;
+    color: #0b1981;
 }
 
-.counts .count-box p {
+    .counts .count-box p {
     padding: 0;
     margin: 0;
     font-family: "Nunito", sans-serif;
     font-size: 14px;
 }
-/* ---------------------------------------------
-#   FEATURES
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# Features
+-------------------------------------------------------------------------------------------------------*/
 .features .feature-box {
-    padding: 24px 20px;
+    padding: 24px 20px; 
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-    transition:  0.3s;
+    transition: 0.3s;
     height: 100%;
 }
 
 .features .feature-box h3 {
     font-size: 18px;
-    color: #012970;
+    color: #012970; 
     font-weight: 700;
-    margin: 0;
+    margin: 0; 
 }
 
-.features .feature-box i {
+.features .feature-box {
     line-height: 0;
     background: #ecf3ff;
-    padding: 4px;
-    margin-left: 10px;
-    font-size: 24px;
+    margin-right: 10px; 
     border-radius: 3px;
+    padding: 4px;
+    font-size: 24px;
     transition: 0.3s;
 }
 
-.features .feature-box:hover i {
+.features .feature-box:hover i { 
     background: #4154f1;
     color: #fff;
 }
 
-.features .feture-tabs {
+.features .feture-tabs { 
     margin-top: 120px;
 }
-
+    
 .features .feture-tabs h3 {
     color: #012970;
-    font-weight: 700;
     font-size: 32px;
-    margin-bottom: 10px;
+    font-weight: 700; 
+    margin-bottom: 10px; 
 }
 
-@media (max-width: 768px) {
-    .features .feture-tabs h3 {
-        font-size: 28px;
+@media (max-width: 768px) { 
+    .features .feture-tabs h3 { 
+        font-size: 28px; 
     }
 }
 
@@ -603,80 +606,80 @@ section {
     border-bottom: 1px solid #eee;
 }
 
-.features .feture-tabs .nav-link {
-    background:  none;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight:  600;
+.features .feture-tabs .nav-link { 
+    background: none;
+    text-transform: uppercase; 
+    font-size: 15px; 
+    font-weight: 600;
     color: #012970;
     padding: 12px 0;
-    margin-right: 25px;
+    margin-right: 25px ;
     margin-bottom: -2px;
     border-radius: 0;
 }
 
-.features .feture-tabs .nav-link.active {
-    color: #4154f1;
+.features .feture-tabs .nav-link.active { 
+    color: #4154f1; 
     border-bottom: 3px solid #4154f1;
 }
 
-.features .feture-tabs .tab-content h4 {
+.features .feture-tabs .tab-content h4 { 
     font-size: 18px;
     margin: 0;
     font-weight: 700;
     color: #012970;
 }
-
-.features .feture-tabs .tab-content i {
-    font-size: 24px;
+    
+.features .feture-tabs .tab-content i { 
     line-height: 0;
+    font-size: 24px;
     margin-right: 8px;
     color: #4154f1;
 }
-
-.features .feature-icons {
-    margin-top: 120px;
+    
+.features .feature-icons { 
+    margin-top: 120px; 
 }
-
+    
 .features .feature-icons h3 {
     color: #012970;
-    font-weight: 700;
+    font-weight: 700; 
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .features .feature-icons h3 {
+@media (max-width: 768px) { 
+    .features .feature-icons h3 { 
         font-size: 28px;
     }
 }
 
-.features .feature-icons .content .icon-box {
+.features .feature-icons .content .icon-box { 
     display: flex;
 }
 
-.features .feature-icons .content .icon-box h4 {
-    font-size: 20px;
-    font-weight: 700;
+.features .feature-icons .content .icon-box h4 { 
+    font-size: 20px; 
+    font-weight: 700; 
     margin: 0 0 10px 0;
     color: #012970;
 }
 
-.features .feature-icons .content .icon-box i {
-    font-size:  44px;
-    line-height:  44px;
+.features .feature-icons .content .icon-box {
+    font-size: 44px; 
+    line-height: 44px;
     color: #0245bc;
     margin-right: 15px;
 }
 
 .features .feature-icons .content .icon-box p {
-    font-size:  15px;
+    font-size: 15px;
     color: #848484;
 }
-/* ---------------------------------------------
-#   F.A.Q
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# F.A.Q
+-------------------------------------------------------------------------------------------------------*/
 .faq .accordion-collapse {
     border: 0;
 }
@@ -700,13 +703,13 @@ section {
     border-bottom: 0;
 }
 
-.faq .accordion-body {
+.faq .accoordion-body {
     padding: 0 0 25px 0;
     border: 0;
 }
-/* ---------------------------------------------
-#   PORTFOLIO
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# Portofolio
+-------------------------------------------------------------------------------------------------------*/
 .portfolio #portfolio-flters {
     padding: 0;
     margin: 0 auto 25px auto;
@@ -725,7 +728,7 @@ section {
     font-weight: 600;
     line-height: 1;
     color: #444444;
-    margin: 0 40px 8px 4px;
+    margin: 0 4px 8px 4px;
     transition: 0.3s;
     border-radius: 50px;
     border: 1px solid #fff;
@@ -746,12 +749,12 @@ section {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background: rgba(225, 225, 225, 0.75);
+    background: rgba(255, 266,255, 0.75);
 }
 
 .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(225, 225, 225, 0.75);
+    background: rgba(255, 266,255, 0.75);
     position: absolute;
     left: 30px;
     right: 30px;
@@ -802,9 +805,9 @@ section {
     width: 48px;
     height: 48px;
     position: absolute;
-    top: 35px;
-    left: 35px;
-    border-bottom: 3px solid rgba(1, 41, 112, 0.2);
+    bottom: 35px;
+    right: 35px;
+    border-bottom:3px solid rgba(1, 41, 112, 0.2) ;
     border-right: 3px solid rgba(1, 41, 112, 0.2);
     transition: all 0.5s ease 0s;
     z-index: 9994;
@@ -825,7 +828,7 @@ section {
     margin: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.portfolio .portfolio-wrap .portfolio-links  {
     text-align: center;
     z-index: 4;
 }
@@ -836,7 +839,7 @@ section {
     margin: 10px 2px;
     width: 36px;
     height: 36px;
-    display:  inline-flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -877,9 +880,9 @@ section {
     bottom: 15px;
     right: 15px;
 }
-/* ---------------------------------------------
-# PORTFOLIO DETAIL
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# Portofolio Details
+-------------------------------------------------------------------------------------------------------*/
 .portfolio-details {
     padding-top: 40px;
 }
@@ -893,7 +896,7 @@ section {
     position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #fff;
@@ -925,7 +928,7 @@ section {
 }
 
 .portfolio-details .portfolio-info ul li+li {
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .portfolio-details .portfolio-description {
@@ -941,15 +944,15 @@ section {
 .portfolio-details .portfolio-description p {
     padding: 0;
 }
-/* ---------------------------------------------
-# TEAM
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# Team
+-------------------------------------------------------------------------------------------------------*/
 .team {
     background: #fff;
     padding: 60px 0;
 }
 
-.team .member {
+.team .member .member-img {
     overflow: hidden;
     text-align: center;
     border-radius: 5px;
@@ -962,60 +965,60 @@ section {
     position: relative;
     overflow: hidden;
 }
-
-.team .member .member-img:after {
+    
+.team .member member-img:after {
     position: absolute;
-    content: "";
+    content:"";
     left: 0;
-    bottom: 0;
+    bottom: 0; 
     height: 100%;
     width: 100%;
-    background: url(../img/team-shape.svg) no-repeat center bottom;
+    background: url(../img/team-shape.svg) no-repeat center bottom; 
     background-size: contain;
     z-index: 1;
 }
-
+    
 .team .member .social {
     position: absolute;
     right: -100%;
     top: 30px;
     opacity: 0;
-    border-radius: 4px;
+    border-radius: 4px; 
     transition: 0.5s;
-    background: rgba(225, 225, 225, 0.3);
+    background: rgba(255, 255, 255, 0.3);
     z-index: 2;
 }
 
 .team .member .social a {
     transition: color 0.3s;
     color: rgba(1, 41, 112, 0.5);
-    margin: 15px 12px;
+    margin: 15px 12px; 
     display: block;
-    line-height: 0;
+    line-height: 0; 
     text-align: center;
 }
 
-.team .member .social a:hover {
-    color: rgba(1, 41, 112, 0.08);
+.team .member .social a:hover { 
+    color: rgba(1, 41, 112, 0.8);
 }
 
-.team .member .social i {
-    font-size: 18px;
+    .team .member .social i { 
+        font-size: 18px;
 }
 
-.team .member .member-info {
+.team .member .member-info { 
     padding: 10px 15px 20px 15px;
 }
 
 .team .member .member-info h4 {
     font-weight: 700;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 20px; 
     color: #012970;
 }
 
 .team .member .member-info span {
-    display: block;
+    display: block; 
     font-size: 14px;
     font-weight: 400;
     color: #aaaaaa;
@@ -1025,33 +1028,33 @@ section {
     font-style: italic;
     font-size: 14px;
     padding-top: 15px;
-    line-height: 26px;
+    line-height: 26px; 
     color: #5e5e5e;
 }
 
 .team .member:hover {
     transform: scale(1.08);
-    box-shadow:  0px 0 30px rgba(1, 41, 112, 0.1);
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
 
 .team .member:hover .social {
     right: 8px;
     opacity: 1;
 }
-/* ---------------------------------------------
-# CLIENTS
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# Clients
+-------------------------------------------------------------------------------------------------------*/
 .clients .clients-slider .swiper-slide img {
     opacity: 0.5;
     transition: 0.3s;
 }
 
-.clients .clients-slider .swiper-slide img:hover {
+.clients .clients-slider .swiper-slide img:hover { 
     opacity: 1;
 }
 
 .clients .clients-slider .swiper-pagination {
-    margin-top: 20px;
+    margin-top: 20px; 
     position: relative;
 }
 
@@ -1060,28 +1063,28 @@ section {
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1 solid #4154f1;
+    border: 1px solid #4154f1;
 }
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #4154f1;
 }
-/* ---------------------------------------------
-# CONTACT
---------------------------------------------- */
-.contact .info-box {
-    color: #444444;
+/*-------------------------------------------------------------------------------------------------------
+# Contact
+-------------------------------------------------------------------------------------------------------*/
+.contact.info-box {
+    color: #444444; 
     background: #fafbff;
-    padding: 30px;
+    padding: 30px; 
 }
 
-.contact .info-box i {
-    font-size: 38px;
+.contact.info-box i {
+    font-size: 38px; 
     line-height: 0;
     color: #4154f1;
 }
 
-.contact .info-box h3 {
+.contact.info-box h3 {
     font-size: 20px;
     color: #012970;
     font-weight: 700;
@@ -1094,24 +1097,24 @@ section {
     font-size: 14px;
     margin-bottom: 0;
 }
-/* ---------------------------------------------
-# FOOTER
---------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------
+# Footer
+-------------------------------------------------------------------------------------------------------*/
 .footer {
-    background: #f6f9ff;
+    background: #f6f9ff; 
     padding: 0 0 30px 0;
     font-size: 14px;
 }
 
-.footer .copyright {
-    text-align: center;
-    padding-top: 30px;
-    color: #012970;
+.footer .copyright { 
+    text-align: center; 
+    padding-top: 30px; 
+    color: #012970; 
 }
 
-.footer .credits {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 13px;
+.footer .credits { 
+    padding-top: 10px; 
+    text-align: center; 
+    font-size: 13px; 
     color: #012970;
 }
